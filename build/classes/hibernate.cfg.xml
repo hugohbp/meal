@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE hibernate-configuration PUBLIC "-//Hibernate/Hibernate Configuration DTD 3.0//EN" "http://www.hibernate.org/dtd/hibernate-configuration-3.0.dtd">
+<hibernate-configuration>
+  <session-factory>
+    <property name="hibernate.dialect">org.hibernate.dialect.MySQLDialect</property>
+    <property name="hibernate.connection.driver_class">com.mysql.jdbc.Driver</property>
+    <property name="hibernate.hbm2ddl.auto">update</property>
+    <property name="hibernate.show_sql">false</property>
+    <mapping class="br.com.senai.entities.Aluno"/>
+    <mapping class="br.com.senai.entities.Escola"/>
+    <mapping class="br.com.senai.entities.Movimentacao"/>
+    <mapping class="br.com.senai.entities.Turma"/>
+    <mapping class="br.com.senai.entities.Usuario"/>
+    <mapping class="br.com.senai.entities.Curso"/>
+    <mapping class="br.com.senai.entities.Turno"/>
+    <mapping class="br.com.senai.entities.Ficha"/>
+    <mapping class="br.com.senai.entities.Tipo"/>
+    <mapping class="br.com.senai.entities.Cidade"/>
+    <mapping class="br.com.senai.entities.Permissao"/>
+    <mapping class="br.com.senai.entities.TipoUsuario"/>
+    <mapping class="br.com.senai.entities.Curso_e_Escola"/>
+    <mapping class="br.com.senai.entities.Atualizacao"/>
+    <mapping class="br.com.senai.entities.Ajuda"/>
+  </session-factory>
+</hibernate-configuration>

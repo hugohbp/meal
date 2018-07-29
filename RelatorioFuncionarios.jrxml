@@ -1,0 +1,70 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<jasperReport xmlns="http://jasperreports.sourceforge.net/jasperreports" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://jasperreports.sourceforge.net/jasperreports http://jasperreports.sourceforge.net/xsd/jasperreport.xsd" name="RelatorioFuncionarios" pageWidth="842" pageHeight="595" orientation="Landscape" whenNoDataType="NoDataSection" columnWidth="802" leftMargin="20" rightMargin="20" topMargin="20" bottomMargin="20" isTitleNewPage="true" whenResourceMissingType="Key" uuid="f92e5608-9c5f-4aff-98b4-a980cf30d4d6">
+	<property name="ireport.zoom" value="0.9090909090909095"/>
+	<property name="ireport.x" value="0"/>
+	<property name="ireport.y" value="0"/>
+	<parameter name="DATAEMISSAO" class="java.lang.String"/>
+	<parameter name="CORPO" class="java.lang.String"/>
+	<parameter name="PERIODO" class="java.lang.String"/>
+	<parameter name="ESCOLA" class="java.lang.String"/>
+	<noData>
+		<band height="212">
+			<textField isStretchWithOverflow="true">
+				<reportElement isPrintRepeatedValues="false" x="0" y="74" width="802" height="138" isPrintWhenDetailOverflows="true" uuid="c781aaa5-d232-48a5-b758-e57b308d2e2d"/>
+				<textElement markup="html">
+					<font fontName="Arial"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$P{CORPO}]]></textFieldExpression>
+			</textField>
+			<staticText>
+				<reportElement x="0" y="0" width="67" height="16" uuid="6891de35-aeef-4de3-b1d4-bd2b875d754b"/>
+				<textElement>
+					<font fontName="Arial" size="10"/>
+				</textElement>
+				<text><![CDATA[Emitido em:]]></text>
+			</staticText>
+			<textField>
+				<reportElement x="67" y="0" width="127" height="16" uuid="1705430f-1532-4a92-ad34-7c7c034987d4"/>
+				<textElement>
+					<font fontName="Arial" size="10"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$P{DATAEMISSAO}]]></textFieldExpression>
+			</textField>
+			<staticText>
+				<reportElement x="289" y="0" width="234" height="34" uuid="e3dc01e8-2577-4fa7-b507-8e33ecc9a679"/>
+				<textElement textAlignment="Center">
+					<font fontName="Arial" size="18" isBold="true"/>
+				</textElement>
+				<text><![CDATA[Retirada de lanches]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="592" y="20" width="48" height="14" uuid="08e5d6a8-8cd7-40b4-a7b2-64c852110e59"/>
+				<textElement>
+					<font fontName="Arial" size="10"/>
+				</textElement>
+				<text><![CDATA[Período: ]]></text>
+			</staticText>
+			<textField>
+				<reportElement x="640" y="20" width="162" height="14" uuid="3f933829-c80e-4f3f-a157-df351311d2d1"/>
+				<textElement>
+					<font fontName="Arial" size="10"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$P{PERIODO}]]></textFieldExpression>
+			</textField>
+			<staticText>
+				<reportElement x="0" y="20" width="45" height="16" uuid="781291ed-335d-480e-97b6-88507727bc01"/>
+				<textElement>
+					<font fontName="Arial" size="10"/>
+				</textElement>
+				<text><![CDATA[Escola: ]]></text>
+			</staticText>
+			<textField isStretchWithOverflow="true">
+				<reportElement x="45" y="20" width="226" height="16" uuid="b42b532d-ff69-4730-8e9e-6535b3f9d734"/>
+				<textElement>
+					<font fontName="Arial" size="10"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$P{ESCOLA}]]></textFieldExpression>
+			</textField>
+		</band>
+	</noData>
+</jasperReport>
